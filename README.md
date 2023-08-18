@@ -1,2 +1,2 @@
 # Linguagem-de-Marcacao-e-Scripts
-Códigos das aulas e tarefas de LMS
+Códigos das aulas e atividades de LMS
