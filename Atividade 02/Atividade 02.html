@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <!-- TÍTULO DA PÁGINA -->
+    <head>
+        <title> Animais da UFC </title>
+    </head>
+    <!-- INFORMAÇÕES DA PÁGINA -->
+    <body>
+        <header>
+            <h1> Animais da UFC Campus Quixadá </h1>                        <!-- Cabeçalho -->
+            <hr/>                                                           <!-- Divisão da página -->
+        </header>
+        <main>
+            <img src="UFC logo.png" width="550" height="150" alt="UFC">     <!-- Logo da UFC -->
+            <br/>                                                           <!-- Parágrafo -->
+            <!--
+                A seguir uma tabela com os animais da UFC, informando:
+                - Nome (Cabeçalho)
+                - Tipo de animal
+                - Sexo
+                - Cor
+            -->
+            <table border="1px">
+                <!-- Nomes -->
+                <tr>
+                    <th>Batata (descanse em paz)</th>
+                    <th>Eloísa</th>
+                    <th>Pretinha</th>
+                    <th>Gatita (descanse em paz)</th>
+                    <th>Perrito</th>
+                </tr>
+                <!-- Imagens, de larguras e alturas 250px -->
+                <tr>
+                    <td> <img src="batata.png"
+                        width="250" height="250" alt="Batata"> </td>
+                    <td> <img src="elo.png" 
+                        width="250" height="250" alt="Elo"> </td>
+                    <td> <img src="pretinha.png" 
+                        width="250" height="250" alt="Pretinha"> </td>
+                    <td> <img src="gato mimimimimimi.png" 
+                        width="250" height="250" alt="Gato mimimimimimi"> </td>
+                    <td> <img src="perrito.png" 
+                        width="250" height="250" alt="Perrito"> </td>
+                </tr>
+                <!-- Tipos -->
+                <tr>
+                    <td>Cachorro</td>
+                    <td>Gato</td>
+                    <td>Cachorro</td>
+                    <td>Gato</td>
+                    <td>Cachorro</td>
+                </tr>
+                <!-- Sexos -->
+                <tr>
+                    <td>Masculino</td>
+                    <td>Feminino</td>
+                    <td>Feminino</td>
+                    <td>Feminino</td>
+                    <td>Masculino</td>
+                </tr>
+                <!-- Cores -->
+                <tr>
+                    <td>Batata</td>
+                    <td>Laranja</td>
+                    <td>Preto</td>
+                    <td>Branco/Preto/Laranja</td>
+                    <td>Branco/Marrom</td>
+                </tr>
+            </table>
+            <hr/>                                   <!-- Divisão da página -->
+        </main>
+        <nav>
+            <!--
+                Links para outras páginas, em listas:
+                - Site do campus
+                - Doação (QR Code)
+                - Site de gatos
+            -->
+            <ul>
+                <!-- Campus -->
+                <h2> Acesse o site do <a href="https://www.quixada.ufc.br/cursos/">
+                    Campus</a> </h2>
+                <!-- QR Code -->
+                <h2> Doe seu dinheiro para ajudar a causa dos animais universitários
+                    <a href="QR Code.html">aqui</a> </h2>
+                <!-- Gatos -->
+                <br/>
+                <a href="https://www.canseidesergato.com">
+                    <img src="gato girando.gif" width="250" height="250" alt="Gato girando"
+                    style = "float: left">
+                </a>
+                <h3> CLIQUE<br/>EM<br/>MIM<br/>PARA<br/>CONTRIBUIR<br/>À<br/>DOMINAÇÃO<br/>
+                     MUNDIAL<br/>DOS<br/>GATOS<br/> </h3>
+            </ul>
+            <hr/>                                   <!-- Divisão da página -->
+        </nav>
+        <article>
+            <!--
+                A seguir uma seção de cadastro de usuário, em que o mesmo precisa informar:
+                - Nome (de no máximo 15 caracteres)
+                - Idade (1 a 100 anos)
+                - Gênero (radio - permite marcar apenas uma opção)
+                - Animais que gosta (checkbox - permite marcar várias opções)
+                - Caixa de texto com informações/curiosidades (não permitido ao usuário alterar)
+            -->
+            <h1>Cadastro de usuário:</h1>
+            <form action="https://www.w3schools.com/action_page.php" method="get">
+                <p>
+                    <label for="inome">Insira seu nome:</label>
+                    <input type="text" name="nome" maxlength="15" required>
+                </p>
+                <p>
+                    <label for="inum">Insira sua idade:</label>
+                    <input type="number" name="numero" min="1" max="100" required>
+                </p>
+                <p>
+                    <label for="igen">Qual seu gênero?:</label><br>
+                    <input type="radio" name="genero" value="masculino" checked> Masculino<br>
+                    <input type="radio" name="genero" value="feminino"> Feminino<br>
+                    <input type="radio" name="genero" value="outro"> Outro<br>
+                </p>
+                <p><label for="igen">De quais animais você gosta?:</label><br>
+                    <input type="checkbox" name="animal1" value="gato"> Gato<br>
+                    <input type="checkbox" name="animal2" value="cachorro"> Cachorro<br>
+                    <input type="checkbox" name="animal3" value="passaro"> Pássaro<br>
+                    <input type="checkbox" name="animal4" value="rato"> Rato<br>
+                    <input type="checkbox" name="animal5" value="macaco"> Macaco<br>
+                </p>
+                <p>
+                    <label for="itexto">A seguir, leia esta informação a respeito sobre os animais:</label><br>
+                    <input type="text" name="texto" value="Animalia, Animal ou Metazoa é um reino biológico composto por seres vivos pluricelulares, eucariontes, heterotróficos, cujas células formam tecidos biológicos, com capacidade de responder ao ambiente (possuem tecido nervoso) que os envolve ou, por outras palavras, pelos animais."
+                    size="209" readonly>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </article>
+        <!-- Rodapé da página -->
+        <footer>
+            <hr/>                                   <!-- Divisão da página -->
+            <br/>                                   <!-- Parágrafo -->
+            <p>Publicado em 24/08/2023</p>
+        </footer>
+    </body>
+</html>
