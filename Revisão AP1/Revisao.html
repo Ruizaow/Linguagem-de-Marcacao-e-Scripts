@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                        <meta charset="UTF-8" />
+        <title>Título da página</title>
+        <link rel="stylesheet" type="text/css" href="./Css/Css da revisao.css"/>
+    </head>
+    <body>
+        <h1>REVISÃO DE LMS</h1><br><br><br><br>
+
+
+
+        <h2>Aula 1 - Escrita de textos 01</h2>
+        <p>Texto padrão usado para escrita de parágrafos é criado com < p ></p>
+        <h6>Texto com < h6 ></h6>
+        <h5>Texto com < h5 ></h5>
+        <h4>Texto com < h4 ></h4>
+        <h3>Texto com < h3 ></h3>
+        <h2>Texto com < h2 ></h2>
+        <h1>Texto com < h1 ></h1>
+        <hr>
+        <p> Linhas que separam a página são criadas com < hr ></p>
+        <hr>
+        <p>Quebras<br>de<br>linha<br>são<br>feitas<br>com<br>< br ></p>
+        <br><br><br>
+
+
+
+        <h2>Aula 2 - Escrita de textos 02, cores, imagens, links, tabelas, listas</h2>
+
+        <p>Outras diferentes maneiras de formatação de texto que existem:</p>
+        <b>Texto negrito 01: < br ></b>    <br>
+        <strong>Texto negrito 02: < strong ></strong>  <br>
+        <i>Texto itálico 01: < i ></i>                 <br>
+        <em>Texto itálico 02: < em >></em>             <br>
+        <mark>Texto em destaque: < mark ></mark>       <br>
+        <small>Texto pequeno: < small ></small>        <br>
+        <del>Texto traçado: < del ></del>              <br>
+        <ins>Texto sublinhado: < ins ></ins>           <br>
+        <sub>Texto em baixo: < sub ></sub>             <br>
+        <sup>Texto em cima: < sup ></sup>              <br><br>
+
+        <p>Alteração de cor de fundo e textos:</p>
+        <h3 style="background-color:red; color:yellow">
+            background-color:red; color:yellow
+        </h3>
+        <h3 style="background-color:orange">
+            background-color:orange
+        </h3>
+        <h3 style="background-color:yellow">
+            background-color:yellow
+        </h3>
+        <h3 style="background-color:blue; color:white">
+            background-color:blue; color:white
+        </h3>
+        <h3 style="background-color:cyan">
+            background-color:cyan
+        </h3>
+        <h3 style="background-color:red; color:#000000">
+            background-color:red; color:#000000
+        </h3>
+        <h3 style="background-color:red; color:rgb(0, 255, 0)">
+            background-color:red; color:rgb(0, 255, 0)
+        </h3><br>
+
+        <p>Exposição de imagens no site por meio de links ou acesso às pastas locais:</p>
+        <h1>Rinha de macaco</h1>
+        <h2>IMAGEM NÃO CLICÁVEL</h2>
+        <img src="https://s3.glbimg.com/v1/AUTH_35862ca5c6ab48b992baf1f1b4f7062e/extra-globo-com/incoming/23699968-78f-4bb/w640h360-PROP/80662767_ririo-de-janeiro-rj-16-01-2019-resgate-de-animais-silvestres-nas-ruas-da-cidadebre.jpg"
+        alt="Macaco 1">
+        <h2>IMAGEM CLICÁVEL</h2>
+        <p> A imagem (ou texto) se torna clicável ao contorná-lo com < a href=(link/nome do arquivo html) > < /a ></a></p>
+        <a href="https://www.acasadosmacacos.com.br/">
+            <img src="https://pbs.twimg.com/media/E7onTurWYAMBU94?format=jpg&name=900x900"
+            alt="Macaco 2">
+        </a>
+        <p> Eu quero ir pro site da <a href="https://reactnative.dev/">React Native</a> ao clicar no link! </p>
+        <br>
+
+        <p>
+            <b>Utilização de tabelas com imagens (comandos abaixo):</b><br>
+            Tabela com tamanho padrão: < table > < /table ><br>
+            Tabela com tamanho personalizado: < table > border="(número)px" < /table ><br>
+            Separa os textos/imagens em linhas: < tr > (conteúdo) < /tr ><br>
+            Separa os textos/imagens em colunas: < td > (conteúdo) < /td ><br>
+            (< td > < /td > deve sempre estar dentro de < tr > < /tr >)
+        </p>
+        <table border="1px">
+            <tr>
+                <td>Macaco 1</td>
+                <td>Macaco 2</td>
+                <td>Macaco 3</td>
+                <td>ele tá</td>
+                <td>muito doente</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://super.abril.com.br/wp-content/uploads/2018/06/macaco-gorducho-home.jpg?quality=90&strip=info&w=1024&h=682&crop=1"
+                    alt="Macaco 1"
+                    style="width: 300px;
+                    height: 300px"/>
+                </td>
+                <td>
+                    <img src="https://s3.glbimg.com/v1/AUTH_35862ca5c6ab48b992baf1f1b4f7062e/extra-globo-com/incoming/23699968-78f-4bb/w640h360-PROP/80662767_ririo-de-janeiro-rj-16-01-2019-resgate-de-animais-silvestres-nas-ruas-da-cidadebre.jpg"
+                    alt="Macaco 2"
+                    style="width: 300px;
+                    height: 300px"/>
+                </td>
+                <td colspan="3">
+                    <img src="https://pbs.twimg.com/media/E7onTurWYAMBU94?format=jpg&name=900x900"
+                    alt="Macaco 3"
+                    style="width: 300px;
+                    height: 300px"/>
+                </td>
+            </tr>
+        </table>
+        <p>As imagens na tabela tiveram altura e largura alteradas utilizando-se style="width: 300px; height: 300px"</p><br>
+        
+        <p>A seguir, a mesma tabela, porém utilizando < th > no lugar de < td > para a separação de textos/imagens em colunas (o que muda é que o texto aparece destacado em negrito e centralizado na coluna, e as imagens não sofrem alterações visuais)</p>
+        <table border="1px">
+            <tr>
+                <th>Macaco 1</th>
+                <th>Macaco 2</th>
+                <th>Macaco 3</th>
+                <th>ele tá</th>
+                <th>muito doente</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://super.abril.com.br/wp-content/uploads/2018/06/macaco-gorducho-home.jpg?quality=90&strip=info&w=1024&h=682&crop=1"
+                    alt="Macaco 1"
+                    style="width: 300px;
+                    height: 300px"/>
+                </td>
+                <td>
+                    <img src="https://s3.glbimg.com/v1/AUTH_35862ca5c6ab48b992baf1f1b4f7062e/extra-globo-com/incoming/23699968-78f-4bb/w640h360-PROP/80662767_ririo-de-janeiro-rj-16-01-2019-resgate-de-animais-silvestres-nas-ruas-da-cidadebre.jpg"
+                    alt="Macaco 2"
+                    style="width: 300px;
+                    height: 300px"/>
+                </td>
+                <td colspan="3">
+                    <img src="https://pbs.twimg.com/media/E7onTurWYAMBU94?format=jpg&name=900x900"
+                    alt="Macaco 3"
+                    style="width: 300px;
+                    height: 300px"/>
+                </td>
+            </tr>
+        </table><br><br>
+        
+        <b>Criação de listas, utilizando-se < li > < /li >:</b>
+        <p> Itens listados em pontos com < ul > < /ul >:</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <p> Itens listados numericamente com < ol > < /ol >:</p>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <p> Itens listados numericamente em algarismos romanos com < ol type="i" > < /ol >:</p>
+        <ol type="i">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol><br><br>
+
+
+
+        <h2>Aula 3 - Tags da página, style, CSS 01</h2>
+
+        <p>
+            <b>As principais divisões (tags) de página que existem são:</b><br>
+            <b>nav:</b> representa a parte relacionada a links ou textos clicáveis nas barras de navegações do site <br>
+            <b>aside:</b> representa o conteúdo presente nas colunas laterais do site<br>
+            <b>header:</b> cabeçalho de um documento ou seção do site <br>
+            <b>main:</b> representa o conteúdo principal do site <br>
+            <b>div:</b> representa uma divisão de algum conteúdo, geralmente utilizado para fazer alterações de estilo no CSS <br>
+            <b>section:</b> seção do site, geralmente acompanhada de um id para estilização em CSS
+            <b>article:</b> representa os artigos do site, onde geralmente estão longos textos corridos com algumas imagens para acompanhá-los<br>
+            <b>footer:</b> representa o rodapé do site <br>
+        </p><br>
+
+        <p>Aqui serão feitas modificações no estilo do conteúdo do site por meio do CSS:</p>
+        <hr>
+        <p class="subclasse">
+            Paragrafo normal
+        </p>
+        <div>
+            <p class="subclasse">
+                Paragrafo normal em uma div
+            </p>
+            <blockquote>
+                <p class="subclasse">Paragrafo normal em uma div dentro do < blockquote > < /blockquote ></p>
+            </blockquote>
+        </div>
+        <p class="meu-id">
+            Paragrafo normal com id="meu-id"
+        </p>
+
+        <h1 class="aula3-h1">
+        CSS Inline</h1>
+
+        <h2 class="aula3-h2">
+        CSS diretamente na página</h2>
+
+        <p class="minha-classe">
+        Meu parágrafo</p>
+
+        <h3 class="aula3-h3">
+        CSS Externo</h3>
+
+        <h4 class="classe-externa">
+        Classe Externa</h4>
+        <hr>
+        <p>Essas modificações são feitas pelo link com o CSS, porém também podem ser feitas utilizando-se <b>style=""</b> entre as < > dos comandos <i>(p, h1-h6, div, article etc.)</i> que se deseja estilizar</p><br>
+
+        <p>Outras modificações em CSS:</p>
+        <hr>
+        <p class="aula3-p">
+            sdfosfdomkdsfo <br />
+            msodfmkosdfmsdfo <br />
+            sdfmofsdmofdsomdsfdfsdfs
+        </p>
+        Arquivo 01
+
+        <p class="aula3-p">
+            <p class="caixa-baixa"> ASFAFSASDASADDSAASD </p>
+        </p>
+        <div class="caixa-baixa">
+            DAIJSADISJIABGDYUAU
+        </div>
+        <hr><br><br><br>
+
+
+
+        <h2>Aula 4 - CSS 02</h2>
+        <main class="aula4">
+            <!--Cabeçalho com barra de navegação-->
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <!--Usar dropdown + mostrar 3 serviços que o site pode oferecer-->
+                    </ul>
+                </nav>
+            </header>
+            <!--Corpo princial do site-->
+            <main>
+                <!--Seção com foto e nome do autor do site-->
+                <section id="introducao">
+                    <div class="container_centralizado">
+                    <!--style="background-color: red;"-->
+                        <img src="./Imagens/gato.jpg" alt="Gato safado"/>
+                        <!--<div style="display: flex; justify-content: center;">-->
+                        <!--background-color: green;-->
+                        <h2>Gato safado</h2>
+                    </div>
+                </section>
+                <!--Seção sobre o autor-->
+                <section id="sobre">
+                    <div class="container">
+                        <h1>Sobre</h1>
+                        <p>O gato é um mamífero carnívoro da família dos felídeos, muito popular como animal de estimação. Ocupando o topo da cadeia alimentar, é predador natural de diversos animais, como roedores, pássaros, lagartixas e alguns insetos. Segundo pesquisas realizadas por instituições norte-americanas, os gatos consistem no segundo animal de estimação mais popular do mundo, estando numericamente atrás apenas dos peixes de aquário. Consta em trigésimo nono na lista das 100 das espécies exóticas invasoras mais daninhas do mundo da União Internacional para a Conservação da Natureza.</p>
+                        <ul>
+                            <li>Exímio espadachim</li>
+                            <li>Invencível</li>
+                            <li>Feio</li>
+                        </ul>
+                    </div>
+                </section>
+                <!--Seção com contatos do autor do site-->
+                <section id="contato">
+                    <div class="container">
+                        <h1>Contato</h1>
+                        <p>sei lá ablublebluble</p>
+                        <ul>
+                            <li>oiiii@gmail.com</li>
+                            <li>Insgram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <!--Informações de rodapé-->
+            <footer>
+                <p>* Copyright 2023 Copia Não Comédia Co Ltd. Quixadá</p>
+            </footer>
+        </main>
+        
+        <br><p>
+            <b>Lista dos comandos CSS utilizados acima:</b><br>
+            <br>Posição<br>
+            <b>position:</b> absolute / relative<br>
+            <b>float:</b> left / right<br>
+            <b>top:</b> 0px<br>
+            <b>left:</b> 0px<br>
+            <br>Padding<br>
+            <b>padding:</b> 0<br>
+            <b>padding-left:</b> 0 px<br>
+            <b>padding-right:</b> 0 px<br>
+            <b>padding-top:</b> 0 px<br>
+            <b>padding-bottom:</b> 0 px<br>
+            <br>Margem<br>
+            <b>margin:</b> 0<br>
+            <b>margin-left:</b> <i>x </i>px<br>
+            <b>margin-right:</b> <i>x </i>px<br>
+            <b>margin-top:</b> <i>x </i>px<br>
+            <b>margin-bottom:</b> <i>x </i>px<br>
+            <br>Borda<br>
+            <b>border:</b> solid red<br>
+            <b>border-style:</b> dotted solid dashed double<br>
+            <b>border-width:</b> 2px 10px 40px 20px<br>
+            <b>border-radius:</b> 50%<br>
+            <b>border-bottom-left-radius:</b> 25px<br>
+            <b>border-color:</b> red green blue yellow<br>
+            <br>Sombra<br>
+            <b>box-shadow:</b> -50px -40px 10px blue<br>
+            <br>Transformação<br>
+            <b>transform:</b> scale(2, 3)<br>
+            <b>transform:</b> translate(20px, 34px)<br>
+            <b>transform:</b> rotate(45deg)<br>
+            <b>transform:</b> skew(45deg, 4deg)<br>
+            <br>Tamanho<br>
+            <b>width:</b> 0 px<br>
+            <b>height:</b> 0 px<br>
+            <b>line-height:</b> 0 px<br>
+            <br>Flexbox<br>
+            <b>display:</b> flex / column / block<br>
+            <b>flex-direction:</b> row / column<br>
+            <b>justify-content:</b> flex-start / center / flex-end<br>
+            <b>align-items:</b> flex-start / center / flex-end / stretch<br>
+            <b>align-content:</b> space-between / space-evenly / space-around<br>
+            <b>flex-wrap:</b> wrap / wrap-reverse / nowrap<br>
+            <b>flex:</b> 1 / 2 / 3<br>
+            <br>Fonte<br>
+            <b>font-size:</b> small / larger<br>
+            <b>font-family:</b> ...<br>
+            <b>font-weight:</b> bolder<br>
+            <b>text-transform:</b> lowercase<br>
+            <b>text-decoration:</b> none<br>
+            <br>Cor<br>
+            <b>color:</b> red / #FFFFFF / 255, 0, 0<br>
+            <b>background-color:</b> red / #FFFFFF / 255, 0, 0<br>
+            <br>Estilo<br>
+            <b>list-style:</b> none<br>
+            <b>list-style-type:</b> none<br>
+            <b>cursor:</b> pointer<br>
+            <b>transition:</b> width 2s, height 2s<br>
+            <b>overflow:</b> visible / hidden / scroll / auto
+        </p><br><br><br>
+
+
+
+        <h2>Aula 5 - Flexbox</h2>
+        <!--CONTAINER / FUNDO AZUL-->
+        <div
+            style="
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                align-content: space-between;
+
+                background-color: aqua;
+                width: 300px;
+                height: 300px;
+            "
+            >
+        <!--flex-direction: row, column;-->
+        <!--justify-content: flex-start, center, flex-end;-->
+        <!--align-items: flex-start, center, flex-end, stretch;-->
+        <!--flex-wrap: wrap, wrap-reverse, nowrap;-->
+        <!--align-content: space-between, space-evenly, space-around-->
+            <div
+                style="
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <!--align-self: flex-start;-->
+            <div
+                style="
+                    background-color: green;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <!--align-self: center;-->
+            <div
+                style="
+                    background-color: blue;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <!--align-self: flex-end;-->
+            <div
+                style="
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: green;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: blue;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: green;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: blue;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: green;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: blue;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: green;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: blue;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: green;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+            <div
+                style="
+                    background-color: blue;
+                    width: 50px;
+                    height: 50px;
+                "
+            ></div>
+        </div><br><br>
+
+        <!--CONTAINER-->
+        <div
+            style="
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+                flex-wrap: nowrap;
+                align-content: space-between;
+
+                background-color: aqua;
+                width: 300px;
+                height: 300px;
+            "
+        >
+        <!--flex-direction: row, column;-->
+        <!--justify-content: flex-start, center, flex-end;-->
+        <!--align-items: flex-start, center, flex-end, stretch;-->
+        <!--flex-wrap: wrap, wrap-reverse, nowrap;-->
+        <!--align-content: space-between, space-evenly, space-around-->
+            <div
+                style="
+                    background-color: red;
+                    flex: 1;
+                "
+            >A</div>
+            <div
+                style="
+                    background-color: green;
+                    flex: 2;
+                "
+            >B</div>
+            <div
+                style="
+                    background-color: blue;
+                    flex: 3;
+                "
+            >C</div>
+        </div><br><br><br>
+
+
+
+        <h2>Aula 6 - Borda, sombra, transformação, transição, animação</h2>
+
+        <div class="retangulos-sombra-transf">
+        </div>
+        <div class="retangulos-sombra-transf"
+        style="border-radius: 25px;">
+        </div>
+        <div class="retangulos-sombra-transf"
+        style="border-radius: 25px 10px 35px 20px;">
+        </div>
+        <div class="retangulos-sombra-transf"
+        style="border-bottom-left-radius: 25px;">
+        </div>
+
+        <div class="retangulos-transicao"></div>
+
+        <div class="retangulos-animacao"></div>
+        <div style="margin-top: 280px;"></div>
+
+
+
+        <h2>Aula 7 - Interface responsiva, menu responsivo, menu dropdown</h2>
+        
+        <section class="mudanca-de-cor"></section><br><br>
+
+        <div class="aula7-container">
+            <!-- MENU LATERAL ESQUERDO/SUPERIOR -->
+            <div class="menu_esquerdo">
+                <ul class="menu">
+                    <li class="menu_item">MENU ITEM 1</li>
+                    <li class="menu_item">MENU ITEM 2</li>
+                    <li class="menu_item">MENU ITEM 3</li>
+                    <li class="menu_item">MENU ITEM 4</li>
+                </ul>
+            </div>
+            <!-- CONTEÚDO -->
+            <div id="conteudo">
+                <p>Não tenho capacidades cognitivas para ler e escrever é uma frase de Luva de Pedreiro, também conhecido internacionalmente como "Receba". O novato jogador com origem brasileira se autodeclara como o melhor do mundo ao fazer uma declarão "eu sou o melhor do mundo, receba!", dito com bastante entusiasmo por ele próprio, Luva de Pedreiro.</p>
+                <img src="./Imagens/luva.jpg" alt="luva">
+            </div>
+        </div><br><br>
+
+        <div class="box_1">ofsamoasfmfosamfosamfsoamsfaomfsa</div>
+        <div class="box_2">ofsamoasfmfosamfosamfsoamsfa</div><br><br>
+
+        <main class=".aula7-parte4">
+            <div class="menu_responsive">
+                <a href="#">Link A</a>
+                <a href="#">Link B</a>
+                <a href="#">Link C</a>
+                <a href="#">Link D</a>
+            </div>
+            <nav class="navegador">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </nav>
+            <div class="conteudo-pagina">
+                abacaxi cachorro html link zelda oh my god jacare
+                crocodilo morcego espantalho palhaço cidade gotica
+            </div>
+        </main><br><br><br><br><br><br><br><br><br><br><br>
+
+        <main class=".aula7-parte5">
+            <div class="acordeon">
+                <div class="secao">
+                    <div class="titulo_secao">Título 1</div>
+                    <div class="conteudo_secao">Conteúdo 1</div>
+                </div>
+                <div class="secao">
+                    <div class="titulo_secao">Título 2</div>
+                    <div class="conteudo_secao">Conteúdo 2</div>
+                </div>
+                <div class="secao">
+                    <div class="titulo_secao">Título 3</div>
+                    <div class="conteudo_secao">Conteúdo 3</div>
+                </div>
+                <div class="secao">
+                    <div class="titulo_secao">Título 4</div>
+                    <div class="conteudo_secao">Conteúdo 4</div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+
+
+<!--------------Cabeçalho--------------
+<header>
+    <nav>
+        <ul>
+            <li> <a href="#Inicio">   Início    </a> </li>
+            <li> <a href="#Historia"> História   </a> </li>
+            <li> <a href="#Loja">     Loja </a> </li>
+            <li> <a href="#Contato">  Contato </a> </li>
+        </ul>
+    </nav>
+</header>    -->
+
+<!--------------Menus laterais--------------
+<div id="navlist">
+    ---------------Menu lado esquerdo--------------
+    <div class="navlist-left">
+        <h3> Lista de Jogos </h3> </br>
+        <a href="#PC">             PC                </a>
+        <a href="#Atari">          Atari 2600        </a>
+        <a href="#NES">            Nintendo NES      </a>
+        <a href="#Gameboy">        Game Boy          </a>
+        <a href="#MegaDrive">      Mega Drive        </a>
+    </div>
+    ---------------Menu lado direito--------------
+    <div class="navlist-right">
+        <h3> Informações extras </h3>
+        <p> Um jogo eletrônico, também chamado videojogo ou pelo anglicismo videogame, é um jogo no qual o jogador interage através de periféricos conectados ao aparelho, como controles (joysticks) e/ou teclado com imagens enviadas a uma televisão ou um monitor, ou seja, aquele que usa tecnologia de computador. O termo inglês video game, ganhou a forma aglutinada no Brasil (como videogame), tanto para se referir a videojogos, como para se referir aos consoles onde os jogos se processam. </br></br>
+            Os sistemas eletrônicos usados para jogar videojogos são conhecidos como plataformas — como, por exemplo, computadores, arcades, celulares e consoles. </br></br>
+            O dispositivo de entrada usado para manipular videojogos é chamado controle e varia de acordo com a plataforma. Por exemplo, um controle pode ser constituído por um direcional e um único botão. Outros podem ter dezenas de botões e mais de um direcional. Muitos jogos de computador podem também ser jogados com teclado ou uma combinação do teclado com o rato/mouse simultaneamente ou até mesmo controles específicos. </br></br>
+            Os videogames também podem usar outras maneiras de interagir e prover informação ao jogador. O uso de sons é usado em larga escala desde os primórdios. Outros tipos de resposta, como dispositivos de vibração e sensores de movimento também são bastante utilizados nos videojogos. O avanço tecnológico tem trazido formas cada vez mais intensas de imersão nos jogos através destes periféricos, como o reconhecimento de movimentos e de voz, surgindo assim os jogos em realidade virtual, fruto do desenvolvimento da tecnologia. </p>
+        <a href="#Plataformas"> Conheça as plataformas existentes! </a>
+    </div>
+</div>  -->

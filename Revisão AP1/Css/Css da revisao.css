@@ -1,0 +1,445 @@
+/* --------- AULA 3 --------- */
+
+/* Tags (em ordem que aparecem) */
+div > .subclasse {
+    font-size: small;
+    color: red;
+}
+
+/* Classes (em ordem que aparecem) */
+.meu-id {
+    font-size: larger;
+    color: blueviolet;
+}
+.aula3-h1 {
+    color: blue;
+    margin-left:100px;
+}
+.aula3-h2 {
+    color: red;
+}
+.minha-classe {
+    color:brown;
+    font-weight:bolder;
+}
+.aula3-h3 {
+    color: blueviolet;
+    margin-top: 50px;
+}
+.classe-externa {
+    color:chocolate
+}
+
+
+.aula3-p {
+    border-style: dotted solid dashed double;
+    border-width: 2px 10px 40px 20px;
+    border-color: red green blue yellow
+}
+.caixa-baixa{
+    text-transform: lowercase;
+}
+
+
+
+/* --------- AULA 4 --------- */
+.aula4 {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 45px;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-right: 2%;
+}
+header nav ul li {
+    padding-left: 2%;
+}
+header a {
+    text-decoration: none;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+section {
+    height: 50vh;
+    border: 1px solid gray;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.container_centralizado {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_centralizado img {
+    height: 200px;
+    border-radius: 50%;
+}
+.container_centralizado h2 {
+    margin-top: 3%;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container_centralizado p, ul {
+    margin-top: 2%;
+    font-size: 1.3em;
+}
+
+.container {
+    margin-top: 1%;
+}
+.container img {
+    height: 200px;
+    border-radius: 50%;
+}
+.container h2 {
+    margin-top: 3%;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container p, ul {
+    margin-top: 2%;
+    font-size: 1.3em;
+}
+
+footer {
+    line-height: 40px;
+    font-size: 1.2rem;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#introducao {
+    background-color: antiquewhite
+}
+#sobre {
+    background-color: beige
+}
+#contato {
+    background-color: blanchedalmond
+}
+
+
+
+/* --------- AULA 6 --------- */
+.retangulos-sombra-transf {
+    width: 100px;
+    height: 50px;
+    margin: 120px;
+    border: solid red;
+    box-shadow: -50px -40px 10px blue;
+    /* horizontal, vertical, blur, cor da sombra */
+    transform: scale(2, 3);
+    transform: translate(20px, 34px);
+    transform: rotate(45deg);
+    transform: skew(45deg, 4deg);
+    /* SOMENTE O transform MAIS DE BAIXO VAI SER APLICADO */
+    /*transform: skewX(45deg);
+    transform: skewY(45deg);
+    transform: rotateX(70deg);
+    transform: rotateY(70deg);*/
+}
+
+.retangulos-transicao {
+    width: 100px;
+    height: 50px;
+    margin: 50px;
+    border: solid red;
+    /*transition: width .5s;*/
+    /*transition: width .5s linear 1s;
+    transition: width .5s ease-in 0s;
+    transition: width .5s ease-out 0s;
+    transition: width .5s ease-in-out 0s;*/
+    transition: width 2s, height 2s;
+}
+.retangulos-transicao:hover {
+    width: 300px;
+    height: 200px;
+}
+
+.retangulos-animacao {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    /* animation-name: mudanca_cor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    animation-name: mudanca_localizacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes mudanca_cor {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: green;
+    }
+} */
+
+@keyframes mudanca_localizacao {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+/* --------- AULA 7 --------- */
+.mudanca-de-cor {
+    background-color: aqua;
+}
+
+@media screen and (min-width: 300px) {
+    .mudanca-de-cor {
+        background-color: green;
+    }
+}
+
+
+.aula7-container {
+    overflow: auto;
+}
+#conteudo {
+    margin-left: 5px;
+}
+.menu_esquerdo {
+    float: none;
+    width: auto;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+}
+.menu_item {
+    margin: 4px;
+    padding: 4px;
+
+    border: 1px solid;
+    border-radius: 5px;
+
+    background-color: beige;
+
+    list-style-type: none;
+}
+
+@media screen and (min-width: 400px) {
+    .menu_esquerdo {
+        float: left;
+        width: 200px;
+    }
+    #conteudo {
+        margin-left: 215px;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+
+.box_1 {
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    border: 10px solid red;
+    margin-bottom: 10px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.box_2 {
+    width: 300px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 25px solid red;
+    box-sizing: border-box;
+}
+
+
+.aula7-parte4 {
+    margin: 0;
+    padding: 0;
+}
+.menu_responsive {
+    background-color: antiquewhite;
+}
+.navegador {
+    background-color: aquamarine;
+}
+
+@media screen and (min-width: 400px) {
+    .menu_responsive {
+        position: relative;
+        float: left;
+        top: 0;
+        left: 0;
+
+        height: 200px;
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .navegador, .conteudo-pagina {
+        margin-left: 200px;
+    }
+}
+
+
+.aula7-parte5 {
+    margin: 0;
+    top: 0;
+}
+.acordeon {
+    width: 300px;
+}
+.acordeon .secao .titulo_secao {
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: aqua;
+    cursor: pointer;
+}
+.acordeon .secao .conteudo_secao {
+    height: 0px;
+    background-color: beige;
+
+    overflow: hidden;
+    transition: height 1s;
+}
+.secao:hover .conteudo_secao {
+    height: 240px;
+    background-color: lightcoral;
+}
+
+
+
+/*<---------------Menu lateral--------------->
+  Lado esquerdo
+.navlist-left {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3B3B3B;
+    height: 142.2%;
+    width: 300px;
+    
+    padding-top: 60px;
+    position: absolute;
+    top: 1;
+}
+
+.navlist-left h3 {
+    font-size: 30px;
+    color: #f1f1f1;
+    padding: 0px 8px 8px 24px;
+}.....
+
+Lado direito
+.navlist-right {
+    right: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #606060;
+    height: 142.2%;
+    width: 400px;
+    
+    padding-top: 60px;
+    position: absolute;
+    top: 1;
+}
+
+.navlist-right h3 {
+    font-size: 30px;
+    color: #f1f1f1;
+    padding: 0px 8px 8px 24px;
+}.....*/
+
+/*<---------------Cabeçalho--------------->
+Barra de navegação
+header {
+    background-color: black;
+}
+
+Barra de navegação - Disposição dos botões (flex-start)
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+Aparência dos botões
+header nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+
+    padding-left: 1%;
+    padding-right: 2%;
+}
+
+Cor de fundo dos botões (ao passar o mouse em cima)
+header nav ul li:hover {
+    background-color: darkblue;
+    text-align: center;
+    transition: 0.5s;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+Aparência dos botões
+header a {
+    color: white;
+    text-decoration: none;
+}
+<------------------------------------>*/
